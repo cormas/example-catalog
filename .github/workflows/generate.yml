@@ -1,0 +1,49 @@
+name: Generate
+
+# Regenerates catalog.json and screenshots/ from models.txt, and commits them
+# when they changed. Runs nightly, when models.txt or the script changes on
+# main, on demand ("Run workflow"), and when a model repository notifies a
+# change of its cormas.json or screenshot.png (model-repository/notify-catalog.yml).
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - models.txt
+      - tools/**
+  workflow_dispatch:
+  repository_dispatch:
+    types: [model-changed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r tools/requirements.txt
+      - name: Generate the catalog
+        run: python tools/catalog.py generate
+      - name: Commit what changed
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "The catalog is unchanged"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Generate the catalog"
+          git pull --rebase
+          git push

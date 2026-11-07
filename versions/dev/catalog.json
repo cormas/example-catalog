@@ -1,4 +1,131 @@
 {
   "format": 1,
-  "models": []
+  "models": [
+    {
+      "baseline": "ConwayModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/conway-model",
+          "ref": "dev",
+          "commit": "bb6342bd173d5ecba91e20d3b0e9453e778ec99d",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Conway's Game of Life. A dead cell with exactly three live neighbours comes alive, and a live cell survives with two or three live neighbours, which is enough to make gliders, oscillators and still lifes.",
+      "screenshot": "screenshots/ConwayModel.png",
+      "screenshotHash": "7d51318577f77b1dfecf876991a75a3cf7ec13c0f078fe4674495d0d4239c734"
+    },
+    {
+      "baseline": "DemoAggregates",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/demo-aggregates",
+          "ref": "dev",
+          "commit": "9eda233c6a1b95e3702ef89f94154d7c52c43bda",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "A demonstration of aggregates of spatial entities. Forest cells change state at random and groves spread over their surroundings; groves, the aggregates of adjacent forest cells, are either rebuilt at each step or grow by absorbing the smaller ones.",
+      "screenshot": "screenshots/DemoAggregates.png",
+      "screenshotHash": "7d51318577f77b1dfecf876991a75a3cf7ec13c0f078fe4674495d0d4239c734"
+    },
+    {
+      "baseline": "Diffuse",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/diffuse-model",
+          "ref": "dev",
+          "commit": "5f79b3e1c34fa751bdb7756be34077addbc080e9",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Ants move at random and deposit pheromones on the ground, while the pheromones diffuse to the neighbouring cells and evaporate.",
+      "screenshot": "screenshots/Diffuse.png",
+      "screenshotHash": "9284de741f41080afa89cd68ca63214b0b6272bd7e10e0026d7e47bc50a10d0e"
+    },
+    {
+      "baseline": "ECECModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/ecec-model",
+          "ref": "dev",
+          "commit": "b414e9509e1b37566b0db00e25ea5a1030f3fffa",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Evolution of Cooperation in an Ecological Context, after Pepper and Smuts (2000). Restrained foragers eat half of a plant's energy and unrestrained ones nearly all of it. Foragers move to the richest plant around them, reproduce and die, and the spatial pattern of plants decides which strategy survives.",
+      "screenshot": "screenshots/ECECModel.png",
+      "screenshotHash": "23f9bb92ad157e80ca5c94e0ba137504952bf69b71bdb03a4a4bae888a8e4529"
+    },
+    {
+      "baseline": "FirefightersModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/firefighters-model",
+          "ref": "dev",
+          "commit": "0d36867e96a92a568cb90ea93fb6d40d7ce4504e",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Wildfire and firefighters in a 900 ha forest, divided into 1 ha plots of which half are forested. Fire spreads every hour to the neighbouring forested plots while 12 firefighters patrol, detect and put out fires, alone or in groups that share information, to compare how coordination affects the burnt area and the time to contain the fire.",
+      "screenshot": "screenshots/FirefightersModel.png",
+      "screenshotHash": "e5ab5a0683ca69eb5190e64638ecd7939c3335a04c1382081fbb879edaa944ce"
+    },
+    {
+      "baseline": "GriffeathModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/griffeath-model",
+          "ref": "dev",
+          "commit": "37a0bed23726f82e2a9750f827fb25b7ae3d4475",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "A cyclic cellular automaton after David Griffeath. Each cell cycles through four states and advances when a neighbour holds the next state, which makes self-organised spirals appear. Variants require a threshold of neighbours, or accept a range of next states.",
+      "screenshot": "screenshots/GriffeathModel.png",
+      "screenshotHash": "c44347d143dafc38ec3072cbf3bd9a735e73866a0876b3b6c1b501267363f7ed"
+    },
+    {
+      "baseline": "RobotForagerModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/robot-forager-model",
+          "ref": "dev",
+          "commit": "c69dd4b24604e5e756e8645359cb264d420b676a",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Robots collecting minerals, after Steels (1989). Autonomous robots move on a grid, collect the minerals they find in the neighbouring cells and otherwise explore at random, illustrating decentralised coordination. A small and a large scenario are provided.",
+      "screenshot": "screenshots/RobotForagerModel.png",
+      "screenshotHash": "c9250ed974398e9b91b1c6452d932e2965470a63b930f2fc623c0b7d62e06ba5"
+    },
+    {
+      "baseline": "ShellingModel",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/shelling-model",
+          "ref": "dev",
+          "commit": "baabe6887ad4cdc969ca6f567a5f122b133ac915",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Schelling's model of segregation. Turtles and frogs live on a grid, and an agent with too few neighbours of its own kind jumps to a random empty cell. Even a mild preference for similar neighbours leads to strongly segregated neighbourhoods.",
+      "screenshot": "screenshots/ShellingModel.png",
+      "screenshotHash": "7d51318577f77b1dfecf876991a75a3cf7ec13c0f078fe4674495d0d4239c734"
+    },
+    {
+      "baseline": "SpatializedPrisonersDilemma",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/Spatialized-Prisoners-Dilemma-model",
+          "ref": "dev",
+          "commit": "5c64a5e7d6690b89c0baaf8159b71cd800d4b7ba",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "The prisoner's dilemma on a grid. Each cell is a player that plays with its eight neighbours and with itself, then adopts the strategy of its most successful neighbour, so that clusters of cooperators can hold out among defectors.",
+      "screenshot": "screenshots/SpatializedPrisonersDilemma.png",
+      "screenshotHash": "d390b0f2de8db27bcffc6c42f647b695e3ea2f95f5ea891bf04eff0d1ad2065e"
+    }
+  ]
 }

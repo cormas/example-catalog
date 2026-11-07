@@ -1,9 +1,10 @@
 name: Generate
 
-# Regenerates catalog.json and screenshots/ from models.txt, and commits them
-# when they changed. Runs nightly, when models.txt or the script changes on
-# main, on demand ("Run workflow"), and when a model repository notifies a
-# change of its cormas.json or screenshot.png (model-repository/notify-catalog.yml).
+# Regenerates catalog.json and screenshots/ of every line in versions/ from its
+# models.txt, and commits them when they changed. Runs nightly, when a
+# models.txt or the script changes on main, on demand ("Run workflow"), and
+# when a model repository notifies a change of its cormas.json or
+# screenshot.png (model-repository/notify-catalog.yml).
 
 on:
   schedule:
@@ -11,7 +12,7 @@ on:
   push:
     branches: [main]
     paths:
-      - models.txt
+      - versions/*/models.txt
       - tools/**
   workflow_dispatch:
   repository_dispatch:

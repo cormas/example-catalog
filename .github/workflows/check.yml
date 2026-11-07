@@ -1,7 +1,9 @@
 name: Check
 
-# Blocks a pull request whose models.txt is not sorted or unique, or lists a
-# repository without a valid cormas.json and screenshot.png.
+# Blocks a pull request whose lines are not valid: a models.txt that is not
+# sorted or lists a version twice, a version without a valid cormas.json and
+# screenshot.png, a branch in a released line, or a released line that would
+# lose or change a version it already offers.
 
 on:
   pull_request:
@@ -19,5 +21,5 @@ jobs:
       - run: pip install -r tools/requirements.txt
       - name: Test the catalog script
         run: python -m unittest discover tools
-      - name: Check models.txt and the repositories it lists
+      - name: Check every line and the versions it lists
         run: python tools/catalog.py check

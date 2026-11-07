@@ -1,8 +1,8 @@
 name: Notify the Cormas catalog
 
 # Copy this file to .github/workflows/ in an official model repository. When
-# cormas.json or screenshot.png changes on the default branch, the catalog of
-# example models is regenerated at once instead of the next night. The work is
+# cormas.json or screenshot.png changes on a branch, the catalog of example
+# models is regenerated at once instead of the next night. The work is
 # done by the reusable workflow .github/workflows/notify.yml of
 # cormas/example-catalog.
 

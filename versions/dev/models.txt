@@ -1,0 +1,9 @@
+https://github.com/cormas/conway-model dev
+https://github.com/cormas/demo-aggregates dev
+https://github.com/cormas/diffuse-model dev
+https://github.com/cormas/ecec-model dev
+https://github.com/cormas/firefighters-model dev
+https://github.com/cormas/griffeath-model dev
+https://github.com/cormas/robot-forager-model dev
+https://github.com/cormas/shelling-model dev
+https://github.com/cormas/Spatialized-Prisoners-Dilemma-model dev

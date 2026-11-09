@@ -62,7 +62,7 @@ def read_listing(text, line):
     for number, text_line in enumerate(text.splitlines(), start=1):
         parts = text_line.split(" ")
         if len(parts) != 2 or not URL_PATTERN.match(parts[0]) or not REF_PATTERN.match(parts[1]):
-            errors.append(f"line {number}: '{text_line}' is not a URL and a ref, like https://github.com/owner/repository v1.0.0")
+            errors.append(f"line {number}: '{text_line}' is not a URL and a ref, like https://github.com/owner/repository 2027.03.14")
             continue
         url, ref = parts
         previous = [each for each, _ in listings]

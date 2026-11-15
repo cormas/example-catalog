@@ -126,6 +126,20 @@
       "summary": "The prisoner's dilemma on a grid. Each cell is a player that plays with its eight neighbours and with itself, then adopts the strategy of its most successful neighbour, so that clusters of cooperators can hold out among defectors.",
       "screenshot": "screenshots/SpatializedPrisonersDilemma.png",
       "screenshotHash": "d390b0f2de8db27bcffc6c42f647b695e3ea2f95f5ea891bf04eff0d1ad2065e"
+    },
+    {
+      "baseline": "WolfSheepPredation",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/wolf-sheep-predation-model",
+          "ref": "dev",
+          "commit": "f5286394ab794a39096c9f983a0ece74f185b89f",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Wolves, sheep and grass: the predator-prey model of Wilensky and Reisman (2006), in its three published versions.",
+      "screenshot": "screenshots/WolfSheepPredation.png",
+      "screenshotHash": "e92958ece1842ff016d79fb6cb130eb9d3b0043c54aeaa8aac6242064092e8e4"
     }
   ]
 }

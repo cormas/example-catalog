@@ -8,3 +8,4 @@ https://github.com/cormas/robot-forager-model dev
 https://github.com/cormas/shelling-model dev
 https://github.com/cormas/Spatialized-Prisoners-Dilemma-model dev
 https://github.com/cormas/wolf-sheep-predation-model dev
+https://github.com/cormas/wolf-sheep-predation-shepherds-model dev

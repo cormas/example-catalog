@@ -140,6 +140,20 @@
       "summary": "Wolves, sheep and grass: the predator-prey model of Wilensky and Reisman (2006), in its three published versions.",
       "screenshot": "screenshots/WolfSheepPredation.png",
       "screenshotHash": "e92958ece1842ff016d79fb6cb130eb9d3b0043c54aeaa8aac6242064092e8e4"
+    },
+    {
+      "baseline": "WolfSheepPredationWithShepherds",
+      "versions": [
+        {
+          "url": "https://github.com/cormas/wolf-sheep-predation-shepherds-model",
+          "ref": "dev",
+          "commit": "b40f77df350aac939b4d5ba201871555c8def8d8",
+          "cormas": "1.0-dev"
+        }
+      ],
+      "summary": "Wolves, sheep, grass and shepherds: version 2 of the predator-prey model of Wilensky and Reisman (2006), with shepherds who keep their flocks in pastures and guard them from wolves.",
+      "screenshot": "screenshots/WolfSheepPredationWithShepherds.png",
+      "screenshotHash": "f2d70e61c2a55cb56a345616c78119a272087711772d59c4a8d04648917305a5"
     }
   ]
 }

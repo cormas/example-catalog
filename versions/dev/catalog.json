@@ -63,7 +63,7 @@
         {
           "url": "https://github.com/cormas/firefighters-model",
           "ref": "dev",
-          "commit": "0a62e8795e69378646d37456946b9df2dddd4ef2",
+          "commit": "c9eba8160ba3ad1c4e9a8854dc856992dd911350",
           "cormas": "1.0-dev"
         }
       ],
@@ -91,7 +91,7 @@
         {
           "url": "https://github.com/cormas/robot-forager-model",
           "ref": "dev",
-          "commit": "f0a47e52f9232a7ea1e22431a472224ecdca986c",
+          "commit": "91ee084ff1c47c0a5b6023c3bae78aa0ba9874e0",
           "cormas": "1.0-dev"
         }
       ],
